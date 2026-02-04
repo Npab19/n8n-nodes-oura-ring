@@ -1,0 +1,22 @@
+{
+	"node": "n8n-nodes-base.ouraRing",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Miscellaneous"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://cloud.ouraring.com/docs/authentication"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://cloud.ouraring.com/v2/docs"
+			}
+		]
+	},
+	"alias": ["oura", "sleep", "health", "fitness", "ring", "wearable", "activity", "readiness"],
+	"subcategories": {
+		"Miscellaneous": ["Health & Fitness"]
+	}
+}
