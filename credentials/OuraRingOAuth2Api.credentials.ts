@@ -42,68 +42,11 @@ export class OuraRingOAuth2Api implements ICredentialType {
 			default: 'header',
 		},
 		{
-			displayName: 'Scopes',
+			displayName: 'Scope',
 			name: 'scope',
-			type: 'multiOptions',
-			default: ['daily', 'personal'],
-			description: 'Select the scopes to request access to. Choose the data types you need access to.',
-			options: [
-				{
-					name: 'Daily (Sleep, Activity, Readiness)',
-					value: 'daily',
-					description: 'Daily summaries of sleep, activity and readiness',
-				},
-				{
-					name: 'Email',
-					value: 'email',
-					description: 'Email address of the user',
-				},
-				{
-					name: 'Heart Health (Cardiovascular Age, VO2 Max)',
-					value: 'heart_health',
-					description: 'Cardiovascular age and VO2 max data',
-				},
-				{
-					name: 'Heart Rate',
-					value: 'heartrate',
-					description: 'Heart rate time series data',
-				},
-				{
-					name: 'Personal',
-					value: 'personal',
-					description: 'Personal information (gender, age, height, weight)',
-				},
-				{
-					name: 'Ring Configuration',
-					value: 'ring_configuration',
-					description: 'Ring configuration data',
-				},
-				{
-					name: 'Session',
-					value: 'session',
-					description: 'Guided and unguided sessions in the Oura app',
-				},
-				{
-					name: 'SpO2',
-					value: 'spo2',
-					description: 'SpO2 average recorded during sleep',
-				},
-				{
-					name: 'Stress',
-					value: 'stress',
-					description: 'Daily stress data',
-				},
-				{
-					name: 'Tag',
-					value: 'tag',
-					description: 'User-entered tags',
-				},
-				{
-					name: 'Workout',
-					value: 'workout',
-					description: 'Auto-detected and user-entered workouts',
-				},
-			],
+			type: 'string',
+			default: 'daily personal email',
+			description: 'Space-separated list of scopes. Available: daily, personal, email, heartrate, workout, tag, session, spo2, ring_configuration, stress, heart_health',
 		},
 		{
 			displayName: 'Webhook Client ID',

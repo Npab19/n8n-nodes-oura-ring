@@ -1,0 +1,16 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n-oura-test
+    ports:
+      - "5679:5678"
+    environment:
+      - N8N_CUSTOM_EXTENSIONS=/custom-nodes
+      - GENERIC_TIMEZONE=America/New_York
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./:/custom-nodes/n8n-nodes-oura-ring:ro
+    restart: unless-stopped
+
+volumes:
+  n8n_data:

@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-oura-ring",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n nodes for Oura Ring API - access sleep, activity, and health data from your Oura Ring",
   "keywords": [
     "n8n-community-node-package",
